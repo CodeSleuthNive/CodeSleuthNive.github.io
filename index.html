@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Nivetha | Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* ===== Reset & Base ===== */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Inter', sans-serif; line-height:1.6; color:#333; background:#f9f9f9;}
+    a {color:#0078ff; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+
+    /* ===== Header ===== */
+    header {background:#111; color:white; text-align:center; padding:4rem 1rem;}
+    header h1 {font-size:3rem; margin-bottom:0.5rem;}
+    header p {font-size:1.2rem;}
+    .contact-icons {margin-top:1rem;}
+    .contact-icons a {margin:0 10px; font-size:1.5rem; color:white;}
+
+    /* ===== Section ===== */
+    section {max-width:900px; margin:3rem auto; padding:1rem; background:white; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
+    h2 {border-left:4px solid #0078ff; padding-left:10px; margin-bottom:1rem;}
+
+    /* ===== About ===== */
+    #about p {font-size:1rem; line-height:1.8;}
+
+    /* ===== Experience ===== */
+    .experience-item {margin-bottom:2rem;}
+    .experience-item h3 {margin-bottom:0.3rem; color:#0078ff;}
+    .experience-item p {margin-bottom:0.2rem;}
+    .tech {font-size:0.9rem; color:#555;}
+
+    /* ===== Skills ===== */
+    .skill-bar {margin-bottom:1rem;}
+    .skill-bar span {display:block; margin-bottom:0.3rem;}
+    .skill-bar-inner {height:10px; border-radius:5px; background:#0078ff; width:0; transition:1s;}
+    .skill-label {display:flex; justify-content:space-between; font-size:0.9rem;}
+
+    /* ===== Projects ===== */
+    .projects-grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:1.5rem;}
+    .project-card {background:#f1f1f1; padding:1rem; border-radius:10px; transition: transform 0.3s; cursor:pointer;}
+    .project-card:hover {transform: translateY(-5px);}
+    .project-card h3 {margin-bottom:0.5rem;}
+    .project-card .tags {font-size:0.85rem; color:#555; margin-bottom:0.5rem;}
+
+    /* ===== Education & Achievements ===== */
+    .edu-achieve {display:flex; flex-wrap:wrap; gap:2rem;}
+    .edu, .achieve {flex:1; min-width:250px;}
+    .edu h3, .achieve h3 {color:#0078ff; margin-bottom:0.5rem;}
+
+    /* ===== Footer ===== */
+    footer {background:#111; color:white; text-align:center; padding:2rem 1rem; margin-top:2rem;}
+    footer a {color:#fff;}
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header>
+    <h1>M Nivetha</h1>
+    <p>Data Analyst | Data Scientist & ML/GenAI Engineer</p>
+    <div class="contact-icons">
+      <a href="mailto:nivetha3807@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/nivetha-murugan-646513220/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/CodeSleuthNive" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="tel:+916381404699" title="Phone"><i class="fas fa-phone"></i></a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Enthusiastic Data Science & AI Professional with 2+ years of experience delivering ML, AI, and GenAI solutions across media, finance, food, and renewable energy domains. Skilled in building end-to-end pipelines from data collection to product deployment using ML, LLMs, CV, and Azure ML. Proven ability to automate insights, generate business value, and deploy scalable real-world solutions.</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Data Analyst | Muzik247 | May 2023 – Present</h3>
+      <p>Worked across multiple subsidiaries: Amara Muzik, Amara Studios, Tapmobi, Muzik247, Vayudrones, Gulabs</p>
+      <p class="tech">Tools: Python, SQL, Machine Learning, Scikit-learn, Deep Learning, Azure ML, APIs, Selenium, Flask, Streamlit, Git, TensorFlow, Transformers, LLMs, Generative AI, Prompt Engineering, Computer Vision, NLP, Web Scraping, OCR, RAG, Vector DB, Hugging Face</p>
+      <ul>
+        <li>YouTube Insight Hub (GenAI): LLM-powered tool to generate artist/channel reports from scraped YouTube data using YouTube API, Selenium, Streamlit.</li>
+        <li>Spotify Data Automation & ML: Pipeline for audio trend analysis, playlist clustering, genre tagging using Python, SQL, ML, DL.</li>
+        <li>Windmill Forecasting & Allocation: Linear programs for smart power routing and downtime analysis.</li>
+        <li>Food & Customer Analytics: Predictive ML models, YOLO-based footfall analysis, Azure ML pipelines.</li>
+        <li>Tinysync (Smart Link Aggregator): Internal tool to generate short links with tracking.</li>
+        <li>Automation Tools (Flask): Agreement Management System, Asset Tracker, Resume Tracker, Excel-to-Tally converter.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Data Intern | Niruvanam | Jul 2022</h3>
+      <p>Used OCR to extract structured data from historical GIS PDFs (Oil and Gas) for reporting.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <span class="skill-label"><span>Python</span><span>95%</span></span>
+      <div class="skill-bar-inner" style="width:95%;"></div>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label"><span>SQL</span><span>90%</span></span>
+      <div class="skill-bar-inner" style="width:90%;"></div>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label"><span>Machine Learning</span><span>90%</span></span>
+      <div class="skill-bar-inner" style="width:90%;"></div>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label"><span>Deep Learning / CV</span><span>85%</span></span>
+      <div class="skill-bar-inner" style="width:85%;"></div>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label"><span>Generative AI / LLMs</span><span>85%</span></span>
+      <div class="skill-bar-inner" style="width:85%;"></div>
+    </div>
+    <div class="skill-bar">
+      <span class="skill-label"><span>Azure ML / Cloud</span><span>80%</span></span>
+      <div class="skill-bar-inner" style="width:80%;"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>YouTube Insight Hub (GenAI)</h3>
+        <p class="tags">Python, Streamlit, LLM, Selenium, YouTube API</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>Spotify Data Automation & ML</h3>
+        <p class="tags">Python, SQL, ML, DL</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>Windmill Forecasting & Allocation</h3>
+        <p class="tags">Python, Linear Programming, Data Analysis</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>EduRAG - Textbook QA</h3>
+        <p class="tags">Python, LLM, Transformers, Vector DB</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>Comment Sentiment Analyzer</h3>
+        <p class="tags">Python, NLP, LLM</p>
+        <a href="#">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Achievements -->
+  <section id="edu-achieve">
+    <h2>Education & Achievements</h2>
+    <div class="edu-achieve">
+      <div class="edu">
+        <h3>Education</h3>
+        <p>M.Sc. Data Science, Bishop Heber College, Tiruchirappalli (2021–2023) — CGPA: 8.88</p>
+        <p>B.Sc. Mathematics, Gandhigram Rural Institute, Dindigul (2018–2021) — CGPA: 8.88</p>
+      </div>
+      <div class="achieve">
+        <h3>Achievements</h3>
+        <ul>
+          <li>2nd in M.Sc. Data Science (2023), Bishop Heber College</li>
+          <li>1st in HSC – Tamil Medium Division (2018), KCM Matriculation</li>
+          <li>3rd in SSLC (2016), HNUPR Girls HSS, Dindigul</li>
+          <li>DP-100: Microsoft Certified Azure Data Scientist Associate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 M Nivetha | <a href="https://github.com/CodeSleuthNive" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/nivetha-murugan-646513220/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
